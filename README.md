@@ -8,10 +8,10 @@ edx building a RISC_V core의 강의는 makerchip을 이용한 TL-verilog를 사
 2. vivado에서 모든 블록 완성 (O)
 pc - imem - decode - register_file_read - ALU - branch - dmem
 4. 시뮬레이션 상황
-a = 1
-while a !=5 :
-  a = a+1
-a를 data memory에 저장 후 불러오기
+a = 1  
+while a !=5 :  
+  a = a+1  
+a를 data memory에 저장 후 불러오기  
 mem[0] = 32'h00100093; // ADDI x1,x0,1  
 mem[1] = 32'h00500113; // ADDI x2,x0,5  
 mem[2] = 32'h00208663; // BEQ x1,x2,8  
